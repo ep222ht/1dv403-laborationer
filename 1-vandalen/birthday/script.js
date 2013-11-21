@@ -4,14 +4,35 @@ window.onload = function(){
 
 	
 	var birthday = function(date){
-		
-
-
-			// Din kod här.
-
-
-
-
+	    //deklarerar födelsedag, current time, samt differensen mellan födelse & current
+	    var birthTime;
+	    var tTime;
+	    var diffTime;
+	    
+	    //om inte ett nummer skrivs in så skickas felmeddelande. 
+	    if(!isNaN(date)){
+	        throw new Error("Ange din födelsedag");
+	    }
+	    
+	    //BirthTime tilldelas ett Date-object
+	    birthTime = new Date(date);
+	    birthTime.setFullYear(2013);
+	    
+	    //Hämtar in dagens datum
+	    tTime = Date.now();
+	    
+	    //beräknar differensen mellan bith & tTime
+	    diffTime = (birthTime - tTime) / 1000 / 60 / 60 / 24; 
+	    
+	    // Avrunda upp
+	    diffTime = Math.ceil(diffTime);
+	    
+	    
+	    if(diffTime < 0){return 365 + diffTime;}
+	    
+	    return diffTime;
+	    
+		// Din kod här.
 	};
 	// ------------------------------------------------------------------------------
 
