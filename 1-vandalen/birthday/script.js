@@ -4,16 +4,16 @@ window.onload = function(){
 
 	
 	var birthday = function(date){
-	    //deklarerar födelsedag, current time, samt differensen mellan födelse & current
+	    //Deklarerar födelsedag, current time, samt differensen mellan födelse & current
 	    var birthTime;
 	    var tTime;
 	    var diffTime;
-	    
-	    //om inte ett nummer skrivs in så skickas felmeddelande. 
-	    if(!isNaN(date)){
-	        throw new Error("Ange din födelsedag");
+
+	    if((!Date.parse(date.toString())) || (Date.parse(date.toString).isNaN)){
+	        error = "skit";
+	        throw error;
 	    }
-	    
+	    else{
 	    //BirthTime tilldelas ett Date-object
 	    birthTime = new Date(date);
 	    birthTime.setFullYear(2013);
@@ -30,9 +30,10 @@ window.onload = function(){
 	    
 	    if(diffTime < 0){return 365 + diffTime;}
 	    
+	   
 	    return diffTime;
-	    
-		// Din kod här.
+	    }
+		
 	};
 	// ------------------------------------------------------------------------------
 

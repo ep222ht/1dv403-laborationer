@@ -4,7 +4,9 @@ window.onload = function(){
 
 	// I denna funktion ska du skriva koden för att hantera "spelet"
 	var convertString = function(str){
-	    
+	    if(!str){
+	        return "Du måste fylla i skit";
+	    }
 	    var strArr = [];
 	    
 	    for(var n = 0; n < str.length; n++){
