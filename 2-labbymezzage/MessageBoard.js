@@ -1,3 +1,4 @@
+"use strict";
 function MessageBoard(boardID){
     var messages = [];
     
@@ -107,7 +108,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
     var eraseLink = document.createElement("a");
     eraseLink.href = "#";
     var erase = document.createElement("img");
-    erase.src = "erase.png";
+    erase.src = "delete.jpg";
     erase.alt = "erase";
     eraseLink.appendChild(erase);
     eraseLink.onclick = function(){
@@ -115,7 +116,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
         return false;
     }
     
-    //knapp fšr att visa när meddelandet skapades
+    //knapp för att visa när meddelandet skapades
     var timeLink = document.createElement("a");
     timeLink.href = "#";
     var timeImg = document.createElement("img");
