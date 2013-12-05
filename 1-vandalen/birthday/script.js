@@ -10,8 +10,8 @@ window.onload = function(){
 	    var diffTime;
 
 	    if((!Date.parse(date.toString())) || (Date.parse(date.toString).isNaN)){
-	        error = "skit";
-	        throw error;
+	       
+	        throw new Error("SKriv in rätt format");
 	    }
 	    else{
 	    //BirthTime tilldelas ett Date-object

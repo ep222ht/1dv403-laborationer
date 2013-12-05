@@ -18,7 +18,7 @@ function MessageBoard(boardID){
 		
 		//rubrik
         var headline = document.createElement("h1");
-        headline.innerHTML = ("Labby Mezzage " + boardID);
+        headline.innerHTML = ("Labby Mezzage ");
         board.appendChild(headline);
         
 		//div-tag för meddelanden och inmatningsruta
@@ -108,7 +108,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
     var eraseLink = document.createElement("a");
     eraseLink.href = "#";
     var erase = document.createElement("img");
-    erase.src = "delete.jpg";
+    erase.src = "delete.png";
     erase.alt = "erase";
     eraseLink.appendChild(erase);
     eraseLink.onclick = function(){
@@ -120,7 +120,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
     var timeLink = document.createElement("a");
     timeLink.href = "#";
     var timeImg = document.createElement("img");
-    timeImg.src = "time.png";
+    timeImg.src = "tid.png";
     timeImg.alt = "time";
     timeLink.appendChild(timeImg);
     timeLink.onclick = function(){
@@ -146,7 +146,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
     msgCount.innerHTML = ("Antal meddelanden: " + this.getMessages().length);
 }
 MessageBoard.prototype.removeMessage = function(messageID){
-    var confirmErase = confirm("Vill du verkligen radera meddelandet?");
+    var confirmErase = confirm("Är du säker på att du vill radera meddelandet?");
     if (confirmErase) {
         this.getMessages().splice(messageID, 1);
         this.renderMessages();
