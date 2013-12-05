@@ -1,0 +1,123 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*bodyn*/
+body {
+	font-family: "georgia", "times new roman", serif;
+	color: #1F1C37;
+}
+
+#container{
+	width: 470px;
+	margin: 50px auto;
+	
+}
+
+.board{
+	padding: 10px;
+	margin: 10px;
+	background-color: #A7E5F1;	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #1F1C37;
+}
+
+/*Head*/
+h1{
+	text-align: right;
+	font-size: 24px;
+	text-transform: capitalize;
+	padding: 40px 0 0 0;
+	margin: 10px;
+	border-width: 1px;
+	border-bottom-style: solid;
+	border-color: #1F1C37;
+}
+
+/*Main*/
+.main{
+	border-width: 1px; 
+	border-style: solid;
+	border-color: #1F1C37;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.messages p{
+	background-color: #ccc;
+	padding: 5px;
+	margin: 5px 0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #1F1C37;
+	text-align: left;
+}
+
+input{
+	display: block;
+}
+
+span{
+	display: block;
+}
+.controls, .msgCount{
+	font-size: x-small;
+	font-style: oblique;
+}
+
+img{
+	float:right;
+}
+
+textarea{
+	width: 400px;
+}
