@@ -160,3 +160,70 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 a, a:active, a:visited {text-decoration: none; color: #614F1E; }
 a:hover { color: #73684b; text-shadow: 0 0 2px #73684b;}
+
+/*
+BOILERPLATE SLUT
+*/
+
+h1,h2,h3,h4,h5,h6,p,a
+{
+    font-family: "Chicle", sans-serif;
+}
+
+h1 
+{
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 0 0 2px #990990;
+    letter-spacing: 3px;
+}
+p 
+{
+    font-size: 16px;
+    clear: both;
+    text-align: center;
+}
+
+#container 
+{
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.memoryGame 
+{
+    width: 457px;
+    float: left;
+    display: inline;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1em #390336;
+}
+
+table 
+{
+    margin: 20px auto;
+}
+
+th 
+{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 0 0 1px #990990;
+    font-family: "Chicle", sans-serif;
+    border-bottom: 2px dotted #390336;
+}
+
+td 
+{
+    padding: 30px;
+}
+
+tfoot 
+{
+    font-size: 2em;
+    font-family: "Chicle", sans-serif;
+    text-align: center;
+}
