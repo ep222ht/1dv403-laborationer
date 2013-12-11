@@ -130,11 +130,11 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #88BABA; color:#fff; text-shadow: none; }
+::selection { background:#88BABA; color:#fff; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; }
+a:link { -webkit-tap-highlight-color: #88BABA; }
 
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
@@ -158,8 +158,8 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-a, a:active, a:visited {text-decoration: none; color: #e87511; }
-a:hover { color: #e87511; text-shadow: 0 0 2px #e87511;}
+a, a:active, a:visited {text-decoration: none; color: #88BABA; }
+a:hover { color: #e87511; text-shadow: 0 0 2px #88BABA;}
 
 /*
 BOILERPLATE SLUT
@@ -175,7 +175,7 @@ h1
 {
     text-align: center;
     font-size: 2em;
-    text-shadow: 0 0 2px #e87511;
+    text-shadow: 0 0 2px #88BABA;
     letter-spacing: 3px;
 }
 p 
@@ -212,7 +212,7 @@ th
     padding: 10px 0;
     text-align: center;
     font-size: 3em;
-    text-shadow: 0 0 1px #e87511;
+    text-shadow: 0 0 1px #88BABA;
     font-family: "Arial", sans-serif;
     border-bottom: 2px dotted #a7d3ff;
 }
