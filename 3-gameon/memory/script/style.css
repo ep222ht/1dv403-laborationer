@@ -150,7 +150,7 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-  color: #390336;
+  color: #444444;
   /* Set your base font here, to apply evenly */
   /* font-family: Georgia, serif;  */
 }
@@ -158,8 +158,8 @@ body, select, input, textarea {
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-a, a:active, a:visited {text-decoration: none; color: #614F1E; }
-a:hover { color: #73684b; text-shadow: 0 0 2px #73684b;}
+a, a:active, a:visited {text-decoration: none; color: #e87511; }
+a:hover { color: #e87511; text-shadow: 0 0 2px #e87511;}
 
 /*
 BOILERPLATE SLUT
@@ -167,14 +167,15 @@ BOILERPLATE SLUT
 
 h1,h2,h3,h4,h5,h6,p,a
 {
-    font-family: "Chicle", sans-serif;
+    font-family: "Arial", sans-serif;
+    color:#e87511;
 }
 
 h1 
 {
     text-align: center;
-    font-size: 4em;
-    text-shadow: 0 0 2px #990990;
+    font-size: 2em;
+    text-shadow: 0 0 2px #e87511;
     letter-spacing: 3px;
 }
 p 
@@ -198,7 +199,7 @@ p
     margin: 20px 10px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 1em #390336;
+    box-shadow: 0 0 1em #a7d3ff;
 }
 
 table 
@@ -211,19 +212,20 @@ th
     padding: 10px 0;
     text-align: center;
     font-size: 3em;
-    text-shadow: 0 0 1px #990990;
-    font-family: "Chicle", sans-serif;
-    border-bottom: 2px dotted #390336;
+    text-shadow: 0 0 1px #e87511;
+    font-family: "Arial", sans-serif;
+    border-bottom: 2px dotted #a7d3ff;
 }
 
 td 
 {
     padding: 30px;
+    color:#e87511;
 }
 
 tfoot 
 {
-    font-size: 2em;
-    font-family: "Chicle", sans-serif;
+    font-size: 1.5em;
+    font-family: "Arial", sans-serif;
     text-align: center;
 }
