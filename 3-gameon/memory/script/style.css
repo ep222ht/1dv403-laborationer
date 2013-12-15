@@ -214,7 +214,7 @@ th
     font-size: 3em;
     text-shadow: 0 0 1px #88BABA;
     font-family: "Arial", sans-serif;
-    border-bottom: 2px dotted #a7d3ff;
+    /*border-bottom: 2px dotted #a7d3ff;*/
 }
 
 td 
