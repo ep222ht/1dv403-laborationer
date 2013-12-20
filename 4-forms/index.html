@@ -1,32 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Formulär</title>
+        <meta charset="utf-8" />
+        <title>Validering</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id=container>
-            <div id="main" role="main">
-                <form id="myForm" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbteknik/process_form.php" method="post">
-                <label for="fname">Förnamn:</label>
-                <input name="fname" id="fname" type="text" />
-                <label for="ename">Efternamn:</label>
-                <input name="ename" id="ename" type="text" />
-                <label for="zip">Postnummer: </label>
-                <input name="zip" id="zip" type="text" />
-                <label for="email">E-post:</label>
-                <input name="email" id="email" type="email" />
-                <label for="prismodell">Prismodell:</label>
-                <select name="prismodell" id="pmodel">
-                    <option value="lag">Låg</option>
-                    <option value="mellan">Mellan</option>
-                    <option value="hog">Hög</option>
-                </select>
-                <input type="submit" id="submitButton" value="Skicka" />
-                </form>
+        <div class="container">
+        <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbteknik/process_form.php" method="POST" id="form">
+            <label for="firstName">Förnamn</label><br />
+            <input type="text" name="firstName" id="firstName" required /><br />
+            <label for="lastName">Efternamn</label><br />
+            <input type="text" name="lastName" id="lastName" required /><br />
+            <label for="postcode">Postnummer</label><br />
+            <input type="number" name="postcode" id="postcode" required /><br />
+            <label for="email">E-post</label><br />
+            <input type="email" name="email" id="email" required /><br />
+            <label for="price">Prismodell</label><br />
+            <select name="price" id="price">
+                <option value="0">Låg</option>
+                <option value="0">Mellan</option>
+                <option value="0">Hög</option>
+            </select><br />
+            <button class="submit">Genomför köp</button>
+            
+                
+            <div class="modal">
+                <div class="dialog">
+                    <h2>Vänligen bekräfta ditt köp</h2>
+                    <div class="fields">
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Bekräfta köp" />
+                        <button class="close">Avbryt</button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </form>
+        </div>    
+        <script src="validation.js"></script>
     </body>
 </html>
