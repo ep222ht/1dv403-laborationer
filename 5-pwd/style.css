@@ -1,0 +1,65 @@
+body
+{
+    font: 11px Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#container
+{
+    position: absolute;
+    background: url(pics/firefox-widescreen-wallpaper.png);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+img
+{
+    border: none;
+}
+.active
+{
+    z-index: 1;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.desktop
+{
+    position: relative;
+    height: 50px;
+    text-align: center;
+}
+.desklank
+{
+    position: absolute;
+    height: 50px;
+    padding-left: 20px;
+}
+a.desk-item
+{
+    display: block;
+    width: 60px;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 14px Arial, Helvetica, sans-serif;
+}
+.desk-item img
+{
+    border: none;
+    margin: 5px 10px;
+    width: 100%;
+}
+.desk-item span
+{
+    display: none;
+    padding-left: 20px;
+    color: #fff;
+}
