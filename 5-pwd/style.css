@@ -1,65 +1,129 @@
-body
-{
-    font: 11px Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body 
+{ 
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-size:12px;
+    line-height:160%;
+    background-color:#fff;
 }
-#container
-{
-    position: absolute;
-    background: url(pics/firefox-widescreen-wallpaper.png);
-    background-color: #000;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
+img 
+{ 
+    border:none;
 }
-img
-{
-    border: none;
-}
-.active
-{
-    z-index: 1;
-    filter: alpha(opacity=50);
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
+a 
+{ 
+    color:White;
+    text-decoration:none;
+    font-size:11px;
 }
 
-.desktop
-{
-    position: relative;
-    height: 50px;
-    text-align: center;
+#desktop 
+{ 
+    width:1056px;
+    height:660px;
+    background:url(pics/firefox-wallpaper.png) no-repeat;
+    margin:auto; 
+    margin-top:40px;
+    padding:20px;
 }
-.desklank
-{
-    position: absolute;
-    height: 50px;
-    padding-left: 20px;
+
+.center 
+{ 
+    width:100px;
+    text-align:center;
+    margin-bottom:20px;
 }
-a.desk-item
-{
-    display: block;
-    width: 60px;
-    color: #000;
-    position: absolute;
-    top: 10px;
-    text-align: center;
-    text-decoration: none;
-    font: bold 14px Arial, Helvetica, sans-serif;
+
+.hidden 
+{ 
+    display:none;
 }
-.desk-item img
-{
-    border: none;
-    margin: 5px 10px;
-    width: 100%;
+.bg 
+{ 
+    background-color:#406289;
+    
 }
-.desk-item span
-{
-    display: none;
-    padding-left: 20px;
-    color: #fff;
+
+.none  
+{ 
+    background-color:Transparent;
+    width:40px;
+    height:40px;
+    
 }
+
+.theWindow 
+{  
+    width:400px;
+    margin-left:110px;
+    z-index:4; 
+    position:absolute;
+    top:90px;
+}
+
+.windowTop 
+{ 
+    background:gray;
+    height:19px;
+    padding-left:10px;
+}
+.windowTopResize 
+{ 
+    background:gray;
+    height:19px; 
+    float:right;
+    width:10px;
+}
+.winTitle 
+{ 
+    padding-left:10px;
+    float:left; 
+    color:White; 
+    font-weight:bold; 
+}
+.winClose 
+{ 
+    margin-top:2px;
+    width:16px;
+    float:right;
+}
+.winIcon 
+{ 
+    padding-top:2px;
+    height:17px; 
+    width:17px;
+    float:left; 
+}
+
+.winBody 
+{
+    background:Gray repeat-y;
+    color:#000;
+    height:400px;
+    width:360px;
+    padding:20px;
+    overflow:auto;
+    float:left; 
+}
+
+.thumbs 
+{ 
+    background-color:Gray;
+    margin:14px; float:left;
+    border:1px solid black;
+    text-align:center;
+}
+
+.windowFooter 
+{ 
+    background:gray;
+    clear:both;
+    height:25px;
+}
+.windowFooterResize 
+{ 
+    background:gray;  
+    height:25px; 
+}
+
+
