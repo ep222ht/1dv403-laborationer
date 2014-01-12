@@ -16,6 +16,7 @@ var Desktop = {
         var popup = document.createElement("popup");
         var imageIcon = document.createElement("img");
         var header = document.createElement("header");
+        var foot =document.createElement("foot");
         Desktop.footer = document.createElement("footer");
         var headerTxt = document.createElement("p");
         var headerText = document.createTextNode("Image Viewer");
@@ -23,6 +24,7 @@ var Desktop = {
         var ajaxImg = document.createElement("div");
         Desktop.loadIcon = document.createElement("img");
         cancelButton.src = "pics/close.png";
+        imageIcon.src = "pics/Galleryicon3.png";
         
         Desktop.time = setTimeout(function() {
         Desktop.loadIcon.src = "pics/ajax-loader.gif";
@@ -34,6 +36,7 @@ var Desktop = {
         popup.className = "popup";
         headerTxt.className = "headerText";
         imageIcon.className = "image";
+        foot.className = "foot";
         
         //Skjuter in taggarna i popup rutan.
         cancelButton.setAttribute("click");
