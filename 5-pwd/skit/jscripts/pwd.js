@@ -1,3 +1,4 @@
+"use strict";
 var PWD = {
 
     counter:null,            //Kollar om fönstret är öppet

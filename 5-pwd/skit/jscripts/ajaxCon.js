@@ -1,3 +1,4 @@
+"use strict";
 var ajaxCon = {
 	
 	READY_STATE_UNINITIALIZED: 0,
