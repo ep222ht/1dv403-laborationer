@@ -16,7 +16,8 @@ var Desktop = {
         var popup = document.createElement("popup");
         var imageIcon = document.createElement("img");
         var header = document.createElement("header");
-        var foot =document.createElement("foot");
+        var status =document.createElement("p");
+        var statusText = document.createTextNode("Sätt bakgrund genom att klicka på bilderna")
         Desktop.footer = document.createElement("footer");
         var headerTxt = document.createElement("p");
         var headerText = document.createTextNode("Image Viewer");
@@ -36,7 +37,8 @@ var Desktop = {
         popup.className = "popup";
         headerTxt.className = "headerText";
         imageIcon.className = "image";
-        foot.className = "foot";
+        status.className = "status";
+        
         
         //Skjuter in taggarna i popup rutan.
         cancelButton.setAttribute("click");
@@ -47,6 +49,8 @@ var Desktop = {
         popup.appendChild(header);
         popup.appendChild(ajaxImg);
         ajaxImg.appendChild(jsonImages);
+        status.appendChild(statusText);
+        Desktop.footer.appendChild(status);
         popup.appendChild(Desktop.footer);
         body.appendChild(popup);
         body.insertBefore(body.firstChild);
@@ -61,7 +65,7 @@ var Desktop = {
     //Knapp funktionen som kallar på ajax anropet för bilderna.
     galleryButton: function() {
             var that = this;
-            var galleryIcon = document.getElementById("GALLERYicon");
+            var galleryIcon = document.getElementById("Galleryicon");
             galleryIcon.addEventListener("click", function() {
                     if (that.counter === 1) {
                         return;
@@ -98,7 +102,7 @@ var Desktop = {
                         }
                     }
                     
-                    //Hämtar ut varje photo individuellt.
+                    //Hämtar ut varje bild individuellt.
                     for (var i = 0; i < jsonStr.length; i++) {
                         var img = document.createElement("img");
                          currentThumb = document.createElement("div");
