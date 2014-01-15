@@ -4,11 +4,11 @@ function MessageBoard(boardID){
     
     this.getMessages = function(){
         return messages;
-    }
+    };
     
     this.getBoardID = function(){
         return boardID;
-    }
+    };
     var that = this;
     
     //skapa ett Messageboard
@@ -54,7 +54,7 @@ function MessageBoard(boardID){
                 textfield.value = "";
                 return false;
             }
-        }
+        };
         main.appendChild(textfield);
         
 		//skicka meddelande när användaren klickar på "skicka"
@@ -65,7 +65,7 @@ function MessageBoard(boardID){
             that.submitMessage(textfield.value);
             textfield.value = "";
             return false;
-        }
+        };
         main.appendChild(submit);
     }
 }
@@ -73,7 +73,7 @@ function MessageBoard(boardID){
 MessageBoard.prototype.submitMessage = function(message){
     this.getMessages().push(new Message(message, new Date));
     this.renderMessages();
-}
+};
 MessageBoard.prototype.renderMessages = function(){
     //Ta bort alla meddelanden
     document.getElementsByClassName("messages")[this.getBoardID() - 1].innerHTML = "";
@@ -82,7 +82,7 @@ MessageBoard.prototype.renderMessages = function(){
     for (var i = 0; i < this.getMessages().length; ++i) {
         this.renderMessage(i);
     }
-}
+};
 MessageBoard.prototype.renderMessage = function(messageID){
     var that = this;
     var messages = document.getElementsByClassName("messages")[this.getBoardID() - 1];
@@ -114,7 +114,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
     eraseLink.onclick = function(){
         that.removeMessage(messageID);
         return false;
-    }
+    };
     
     //knapp för att visa när meddelandet skapades
     var timeLink = document.createElement("a");
@@ -126,7 +126,7 @@ MessageBoard.prototype.renderMessage = function(messageID){
     timeLink.onclick = function(){
         alert("Meddelandet skapades " + date);
         return false;
-    }
+    };
     
     //sammanfogar tids- och radera-knappen
     var controls = document.createElement("span");
@@ -144,14 +144,14 @@ MessageBoard.prototype.renderMessage = function(messageID){
     //Uppdaterar meddelanderäknaren
     var msgCount = document.getElementsByClassName("msgCount")[this.getBoardID() - 1];
     msgCount.innerHTML = ("Antal meddelanden: " + this.getMessages().length);
-}
+};
 MessageBoard.prototype.removeMessage = function(messageID){
     var confirmErase = confirm("Är du säker på att du vill radera meddelandet?");
     if (confirmErase) {
         this.getMessages().splice(messageID, 1);
         this.renderMessages();
     }
-}
+};
 window.onload = function(){
     new MessageBoard(1);
 };
