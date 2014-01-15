@@ -129,9 +129,8 @@ ValidatedForm.prototype.postcodeField = function () {
 };
 
 ValidatedForm.prototype.emailField = function () {
-    var emailRegex = new RegExp('[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' +
-                                '(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?');
-    if (this.value.match(emailRegex) == null) {
+    var emailRegex = new RegExp('[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' + '(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?');
+    if (this.value.match(emailRegex) === null) {
         this.className = 'bad';
 
         if (this.nextSibling.tagName !== 'SPAN') {

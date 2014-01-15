@@ -44,7 +44,7 @@ var MemoryApp = function (memoryGameName) {
         table.appendChild(tbody);
         var memoryField = new Array(rows);
         for (var i = 0; i < memoryField.length; i++) {
-            tr = document.createElement("tr")
+            tr = document.createElement("tr");
             tbody.appendChild(tr);
             memoryField[i] = new Array(cols);
             for (var j = 0; j < memoryField[i].length; j++) {
