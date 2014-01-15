@@ -5,7 +5,7 @@ var Desktop = {
     counter : 0,
     loadIcon : null,
     footer : null,
-    time : null,
+    
     
     
     //Variablerna för popup fönstret.
@@ -17,7 +17,7 @@ var Desktop = {
         var imageIcon = document.createElement("img");
         var header = document.createElement("header");
         var status =document.createElement("p");
-        var statusText = document.createTextNode("Sätt bakgrund genom att klicka på bilderna")
+        var statusText = document.createTextNode("Sätt bakgrund genom att klicka på bilderna");
         Desktop.footer = document.createElement("footer");
         var headerTxt = document.createElement("p");
         var headerText = document.createTextNode("Image Viewer");
