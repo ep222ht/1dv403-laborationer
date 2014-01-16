@@ -8,7 +8,7 @@ var Desktop = {
     
     
     
-    //Variablerna för popup fönstret.
+    //Variablerna för popup window.
     popupWindow: function(jsonImages) {
         this.counter++;
         var that = this;
@@ -32,7 +32,7 @@ var Desktop = {
         Desktop.footer.appendChild(Desktop.loadIcon);
         },300);
         
-        //Ger några variabler klassnamn för redigering.
+        //Ger några variablar klassnamn för redigering.
         cancelButton.className = "cancelButton";
         popup.className = "popup";
         headerTxt.className = "headerText";
@@ -40,7 +40,7 @@ var Desktop = {
         status.className = "status";
         
         
-        //Skjuter in taggarna i popup rutan.
+        //Skjuter in elementen i popup rutan.
         cancelButton.setAttribute("click");
         header.appendChild(imageIcon);
         headerTxt.appendChild(headerText);

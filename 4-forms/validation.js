@@ -105,7 +105,7 @@ ValidatedForm.prototype.textField = function () {
         }
     }
 };
-
+//Postnummer validation.
 ValidatedForm.prototype.postcodeField = function () {
     this.value = this.value.replace(/^(SE)? ?(\d\d\d)( |\-)?(\d\d)$/, '$2$4');
 
@@ -127,7 +127,7 @@ ValidatedForm.prototype.postcodeField = function () {
         }
     }
 };
-
+//Email regex.
 ValidatedForm.prototype.emailField = function () {
     var emailRegex = new RegExp('[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' + '(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?');
     if (this.value.match(emailRegex) === null) {
